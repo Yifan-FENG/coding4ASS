@@ -3,5 +3,5 @@ Source code for Digital Humanities. Courses convened at University of Amsterdam 
 
 
 Other online resource:
-- [lastest Intro to DH & SA module at VU Amsterdam](https://github.com/cltl/python-for-text-analysis) 
+- [Intro to DH & SA module at VU Amsterdam (lastest version](https://github.com/cltl/python-for-text-analysis) 
 
