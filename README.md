@@ -1,2 +1,6 @@
 # coding4humanities
-Source code for Digital Humanities. Course convened at University of Amsterdam and VU Amsterdam.
+Source code for Digital Humanities. Courses convened at University of Amsterdam and VU Amsterdam.
+
+
+Other online resource:
+
