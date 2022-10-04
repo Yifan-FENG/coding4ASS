@@ -1,0 +1,92 @@
+one-sample t-test: compare a group of value to a certain value
+two sample t-test: two groups compare with each other
+paired t-test: e.g. test the blood pressure, test once and then treat the patients with medicine, after that test a second time.    same individuals and pick two samples
+
+```{r}
+library(readr)
+kc<-read_csv("KungCensus.csv")
+```
+
+#create file with only females older than 18 years of age
+```{r}
+kaf <- subset(kc, sex=="woman" & age > 18)
+summary(kaf$height)
+```
+
+```{r}
+mean(kaf$height,na.rm=TRUE)
+sd(kaf$height, na.rm = TRUE)
+```
+
+#One-sample t-test 
+```{r}
+t.test(kaf$height, mu=155)
+t.test(kaf$height, mu=155, conf.level=0.99)
+```
+the size of the confidence interval is changed and the others remain the same.   the change of the CI is not large enough to extend to 14.
+
+exercise
+```{r}
+t.test(kaf$weight, mu=40)
+t.test(kaf$weight, mu=40, conf.level = 0.95)
+t.test(kaf$weight, mu=40, conf.level = 0.99)
+```
+reject the null hypothesis.
+Below is the same way of generate t-test
+```{r}
+km<-subset(kc, sex=="man")
+kw<-subset(kc, sex=="woman")
+t.test(km$weight, kw$weight)
+```
+
+#Two-sample t-test
+```{r}
+t.test(kc$weight ~ kc$sex)
+t.test(kc$weight ~ kc$sex,conf.level=0.99)
+```
+reject the null hypothesis
+#Paired t-test
+#first, install and run package ISwR
+```{r}
+library(ISwR)
+intake
+t.test(intake$post, intake$pre, paired=T)
+t.test(intake$pre, intake$post, paired=T)
+```
+
+```{r}
+t.test(intake$post, intake$pre, paired=T,conf.level=0.99)
+t.test(intake$post, intake$pre,conf.level = 0.95)
+t.test(intake$post, intake$pre,conf.level = 0.99)
+```
+
+```{r}
+kfm
+```
+
+```{r}
+str(intake)
+```
+
+```{r}
+kfm_man<-subset(kfm, sex=="boy")
+kfm_woman<-subset(kfm, sex=="girl")
+t.test(kfm_man$weight, kfm_woman$weight)
+t.test(kfm_man$dl.milk, kfm_woman$dl.milk)
+
+#t.test(kfm$weight~kfm$sex)
+
+```
+
+the data is from the same year. paired.
+```{r}
+Longevity<-read_csv("humanlongevity.csv")
+t.test(Longevity$longevity.men,Longevity$longevity.women,paried=TRUE)
+```
+
+
+
+
+
+
+
