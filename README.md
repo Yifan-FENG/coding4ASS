@@ -1,4 +1,4 @@
-# coding4humanities
+# Coding4HumanitiesSocialSciences
 Python Source code for Digital Humanities. Courses convened at University of Amsterdam and VU Amsterdam.
 
 Repo:
