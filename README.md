@@ -1,5 +1,5 @@
 # coding4humanities
-Source code for Digital Humanities. Courses convened at University of Amsterdam and VU Amsterdam.
+Python Source code for Digital Humanities. Courses convened at University of Amsterdam and VU Amsterdam.
 
 Repo:
 - [UvA Coding the Humanities 19-20](https://github.com/Yifan-FENG/coding4humanities/tree/main/CodingtheHumanities)
