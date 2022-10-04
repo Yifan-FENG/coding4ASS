@@ -1,4 +1,4 @@
-# Coding Humanities & Social Sciences
+# Coding for Arts & Social Sciences
 Python & R Source code convened at University of Amsterdam, VU Amsterdam and UCL
 
 ### Repo (python):
