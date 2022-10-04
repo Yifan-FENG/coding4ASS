@@ -10,4 +10,5 @@ Python & R Source code convened at University of Amsterdam, VU Amsterdam and UCL
 
 
 ### Repo (R):
-
+-- [UCL Stats with R and RStudio]()
+-- [UCL Data Science in R]()
