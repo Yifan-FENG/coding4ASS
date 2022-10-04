@@ -6,5 +6,5 @@ Repo:
 - [VU Intro2Python for Humanities and Social Sciences](https://github.com/Yifan-FENG/coding4humanities/tree/main/Intro2Python)
 
 Other online resource:
-- [Intro to DH & SA module at VU Amsterdam (lastest version](https://github.com/cltl/python-for-text-analysis) 
+- [Intro to DH & SA module at VU Amsterdam (lastest version)](https://github.com/cltl/python-for-text-analysis) 
 
